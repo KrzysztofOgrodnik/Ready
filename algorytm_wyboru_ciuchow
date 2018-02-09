@@ -1,0 +1,113 @@
+#include <iostream>
+using namespace std;
+int main()
+
+// Wybieramy ciuchy dla żony. Zobaczmy,jaki mamy gust;
+
+{
+	cout << "Witaj w szafie, nie wchodz za gleboko, bo po drugiej stronie lezy snieg, \n";
+	cout << "kreci sie tez jakis lew \n";
+	cout << "\nZacznijmy od spodni\n";
+
+	int spodnie;
+	cout << "Jakie chcesz spodnie? \n 1- czarne \n 2- niebieskie\n 3- czerwone \n \n ";
+	cin >> spodnie;
+	switch (spodnie)
+	{
+	case 1:
+		int bluzka;
+		cout << "\nDo czarnych spodni pasuja takie bluzki: ";
+		cout << "\n 1- turkusowa \n 2- blekit paryski \n 3- jasminowa \n 4- lilarozowa \n 5- burgundowa \n 6- kaszmirowa \n 7- szafirowa\n";
+		//okreslamy bluzke
+		cin >> bluzka;
+
+		if (bluzka <= 7)
+		{
+			cout << "\nWysmienity wybor! \n";
+		}
+		else
+		{
+			cout << "\nNie ma takiej bluzki\n";
+		}
+		break;
+
+	case 2:
+		//int bluzka - tu popelnilem blad, nie ma potrzeby definiowac wiele razy, to nie jest petla;
+		cout << "\nDo niebieskich spodni pasuja takie bluzki: ";
+		cout << "\n 3- jasminowa \n 4- lilarozowa \n 5- burgundowa \n 6- kaszmirowa \n 7- szafirowa \n 8- mietowa  \n 9- kanarkowa\n";
+		cin >> bluzka;
+		if (bluzka == 3)		// tu jest tez opcja else, wiec otwieramy klamre
+		{
+			cout << "\nWspaniale!\n";
+		}
+		else if (bluzka == 4)
+		{
+			cout << "\nWspaniale!\n";
+		}
+		else if (bluzka == 5)
+		{
+			cout << "\n jest ok...\n";
+		}
+		else if (bluzka == 8)
+		{
+			cout << "\nWspaniale!\n";
+		}
+		else if (bluzka == 9)a
+		{
+			cout << "\nWspaniale!\n";
+		}
+		else if (bluzka == 6, 7)
+		{
+			cout << "\nNo spoko...\n";
+		}
+		else
+		{
+			cout << "\nNie ma takiej bluzki\n";
+		}
+		break;
+
+	case 3:
+		//int bluzka; - znowu tu byl blad w probie definiowania bluzek
+		cout << "\nDo czerwonych spodni pasuja takie bluzki: ";
+		cout << "\n 3- jasminowa \n 7- szafirowa \n 8- mietowa \n 9- kanarkowa \n 10- ekri \n 11- grafitowa \n 12- druga grafitowa (niespodzianka!)\n";
+		cin >> bluzka;
+		if (bluzka == 3)
+		{
+			cout << "\nWow!\n";
+		}
+		else if (bluzka == 7)
+		{
+		cout << "\n jak tylko ta jest czysta, to zaloz";
+		}
+		else if (bluzka == 8)
+		{
+			cout << "\nKlasa!\n";
+		}
+		else if (bluzka == 9)
+		{
+			cout << "\nKlasa!\n";
+		}
+		else if (bluzka == 10)
+		{
+			cout << "\nKlasa!\n";
+		}
+		else if (bluzka == 11)
+		{
+			cout << "\nKlasa!\n";
+		}
+		else if (bluzka == 12)
+		{
+			cout << "\nKlasa!\n";
+		}
+		else
+			{
+			cout << "\nNie ma takiej bluzki\n";		
+			}
+		break;
+
+	default:
+		cout << "\nIdz do sklepu\n";	// gdyby ktos pomyslal wybrzydzac
+
+	}
+	 system("pause");
+}
