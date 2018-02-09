@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	// porysujemy prostokąty- w zależności od podanej wartości program narysuje nam prostakąt, którego krawędź będzie składa się z takiej liczby gwiazdek
+	// jak rzuciłem okiem w internet, to okazło się, że to bardzo popularny program dla początkujących
+
+	int rozmiar;
+
+	cout << "podaj rozmiar kwadratu\n";
+	cin >> rozmiar;
+	cout << "\n";
+
+	int wiersz = 0;
+	while (wiersz != rozmiar) {
+		wiersz++;
+		int kolumna = 0; {
+			while (kolumna != rozmiar) {
+				kolumna++; {
+					if (wiersz == 1 || wiersz == rozmiar || kolumna == 1 || kolumna == rozmiar) cout << "* "; //od 1, nie od 0, while działa na bieżący wiersz
+					else cout << "  ";
+				}
+			}
+		}
+		cout << "\n";
+	}
+	
+		system("pause");
+	}
