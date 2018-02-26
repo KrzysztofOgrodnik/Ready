@@ -23,7 +23,7 @@ int main()
 		double trp[5] = {};
 
 		cout << "\nTyle poszlo srednio na dinozaura: \n";
-		cout << tr+1 && tp+1;
+		cout << tr+1 && tp+1;				// tu jest pies pogrzebany
 		for (k = 0; k < 5; k++)
 		{
 			cout << "trp[" << +k << "] = " << trp[+k] << endl;
