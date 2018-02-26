@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int main()
+
+// roślinożerne
+{
+		double tr[5];						// deklarujemy tablicę z dinozaurami roślinożernymi w naszych zagrodach, przyjmujemy, ze mamy ich 5;
+		int i,j,k;						
+		for (i = 0; i < 5; i++)
+		{
+			cout << "Ile mamy roslnozercow w poszczegolnych zagrodach? \n [" << i << "]"  << i << endl;
+			cin >> tr[i];
+		}
+		cout << "Tyle mamy roslinozercow:\n"; // wypisujemy tablicę z z podanymi dinozaurami;
+		for (j = 0; j < 5; j++)
+		{
+			cout << "tr[" << j << "] = " << tr[j] << endl;
+		}
+
+		cout << "Ile ton paszy poszlo w tym miesiacu na zagrode? \n";
+		double tp[] = { 301, 358, 238, 189, 456};
+		double trp[5] = {};
+
+		cout << "\nTyle poszlo srednio na dinozaura: \n";
+		cout << tr+1 && tp+1;
+		for (k = 0; k < 5; k++)
+		{
+			cout << "trp[" << +k << "] = " << trp[+k] << endl;
+		}
+		
+		system("pause");
+}
