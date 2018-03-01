@@ -5,12 +5,11 @@ int main()
 
 // ilość dinozaurow
 {
-		double tros[5];						// deklarujemy tablicę z dinozaurami roślinożernymi
-									w naszych zagrodach, przyjmujemy, ze mamy ich 5;
-		int i,j,k,m;						
+		double tros[5];				// deklarujemy tablicę z dinozaurami roślinożernymi w naszych zagrodach, przyjmujemy, ze mamy ich 5;
+		int i,j,k,m;			
+		cout << "Ile mamy roslnozercow w poszczegolnych zagrodach? Mamy 5 zagrod \n"; 
 		for (i = 0; i < 5; i++)
 		{
-			cout << "Ile mamy roslnozercow w poszczegolnych zagrodach? \n [" << i << "]"  << i << endl;
 			cin >> tros[i];
 		}
 		cout << "Tyle mamy roslinozercow:\n"; // wypisujemy tablicę z z podanymi dinozaurami;
@@ -29,14 +28,16 @@ int main()
 		cout << "\nTyle poszlo srednio na dinozaura: \n";
 		for (k = 0; k < 5; k++)
 		{
-			trospasz[k] = tpasz[k] / tros[k];		// tu byl wczesniej blad, w nawiasach bylo [0], czyli odniesienie do 
-									pierwszego elementu (który pozostawal bez zmian w nastepnych obliczneiach)
-									// powinno być od początku k, czyli zmienna
+			trospasz[k] = tpasz[k] / tros[k];			// tu byl wczesniej blad, w nawiasach bylo [0], 
+										czyli odniesienie do pierwszego elementu (który pozostawal bez zmian w nastepnych obliczneiach)
+										// powinno być od początku k, czyli zmienna
 			cout << "trospasz[" << k << "] = " << trospasz[k] << endl;
 		}
 
 
 	// jaki podatek od dinozaura, czyli od luksusu (jak za psa :) )
+
+		cout << "\nJaki podatek zaplacimy za dinozaury?";
 
 		double podatek = 121.24;			// maksymalna oplata za psa na rok 2018
 		double suma = 1;				//inicjalizacja sumy
