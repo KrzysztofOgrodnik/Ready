@@ -3,31 +3,48 @@
 using namespace std;
 int main()
 
-// roślinożerne
+// ilość dinozaurow
 {
-		double tr[5];						// deklarujemy tablicę z dinozaurami roślinożernymi w naszych zagrodach, przyjmujemy, ze mamy ich 5;
-		int i,j,k;						
+		double tros[5];						// deklarujemy tablicę z dinozaurami roślinożernymi w naszych zagrodach, przyjmujemy, ze mamy ich 5;
+		int i,j,k,m;						
 		for (i = 0; i < 5; i++)
 		{
 			cout << "Ile mamy roslnozercow w poszczegolnych zagrodach? \n [" << i << "]"  << i << endl;
-			cin >> tr[i];
+			cin >> tros[i];
 		}
 		cout << "Tyle mamy roslinozercow:\n"; // wypisujemy tablicę z z podanymi dinozaurami;
 		for (j = 0; j < 5; j++)
 		{
-			cout << "tr[" << j << "] = " << tr[j] << endl;
+			cout << "tros[" << j << "] = " << tros[j] << endl;
 		}
+
+	
+	// ile jedza
 
 		cout << "Ile ton paszy poszlo w tym miesiacu na zagrode? \n";
-		double tp[] = { 301, 358, 238, 189, 456};
-		double trp[5] = {};
+		double tpasz[] = { 301, 358, 238, 189, 456};
+		double trospasz[5] = {};
 
 		cout << "\nTyle poszlo srednio na dinozaura: \n";
-		cout << tr+1 && tp+1;				// tu jest pies pogrzebany
 		for (k = 0; k < 5; k++)
 		{
-			cout << "trp[" << +k << "] = " << trp[+k] << endl;
+			trospasz[k] = tpasz[k] / tros[k];						// tu byl wczesniej blad, w nawiasach bylo [0], czyli odniesienie do pierwszego elementu (który pozostawal bez zmian w nastepnych obliczneiach)
+													// powinno być od początku k, czyli zmienna
+			cout << "trospasz[" << k << "] = " << trospasz[k] << endl;
 		}
-		
+
+
+	// jaki podatek od dinozaura, czyli od luksusu (jak za psa :) )
+
+		double podatek = 121.24;			// maksymalna oplata za psa na rok 2018
+		double suma = 1;					//inicjalizacja sumy
+		for (m = 0; m < 5; ++m)
+		{
+			suma += tros[m];				//sumujemy zwierzaki
+											//mnożymy je przez wyskość podtaku od luksusu
+		}
+			suma = suma * podatek;
+			cout << "\nPodatek za rok 2018 za wszystkie dinozaury wynosi: " << suma << endl;
+
 		system("pause");
 }
